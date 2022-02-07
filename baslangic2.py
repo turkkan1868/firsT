@@ -454,9 +454,24 @@ list(map(lambda numara : numara *4,yyListe))
 
     
 
- 
+n1umara = 20
+def carpma(rakam):
+     n1umara=10
+     return numara * numara
     
+#20 yazar 
 
+benimAd2 = " hakan"
+
+def bKs():
+    #enclosing
+    benimAd2 = "halil"
+    def icfonk():
+        #local den dışarı dogru gidioyr varsa fonk en içindeki
+        benimAd2="ayşe"
+    icfonk()
+    
+    
 
     
     
