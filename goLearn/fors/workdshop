@@ -1,0 +1,44 @@
+package fors
+
+import "fmt"
+
+func Demo3() {
+	tahmin := 0
+	aklimdaki := 80
+	tahminSayisi := 0
+	fmt.Println("sayi gir eşek")
+	fmt.Scanln(&tahmin)
+	tahminSayisi = tahminSayisi + 1
+
+	for aklimdaki != tahmin {
+
+		if tahmin < aklimdaki {
+			fmt.Print("Daha büyük söyle")
+			fmt.Scanln(&tahmin)
+			tahminSayisi = tahminSayisi + 1
+
+		}
+
+		if tahmin < aklimdaki {
+			fmt.Print("Daha küçük söyle")
+			fmt.Scanln(&tahmin)
+			tahminSayisi = tahminSayisi + 1
+
+		}
+	}
+
+	//"" enty boş demek
+	// && iki şartta doğru olacak
+	// || yada ikisinden biri geçerli olaak
+
+	basariDurumu := "" //burada bir hata var anlamadım kod pasifte
+	if tahminSayisi > 0 && tahminSayisi <= 3 {
+		basariDurumu = "Super"
+	} else if tahminSayisi <= 6 {
+		basariDurumu = "Güzel"
+	} else {
+		basariDurumu = " fena değil "
+	}
+
+	fmt.Print("BİLDİN EŞEKKK. %v Tahmin sayısı : %v ", tahminSayisi)
+}
