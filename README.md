@@ -1,0 +1,1 @@
+# Garibanın yola çıkış haritası.
