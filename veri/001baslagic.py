@@ -2,7 +2,7 @@ kkk = input("yaş gir")
 print(type(kkk))
 
 a = 5
-y = "tesads"    
+y = "tesaids"    
 
 y.capitalize() ## baş  harfi büyük yazar
 
